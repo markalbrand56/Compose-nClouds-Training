@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Database configuration
 db_config = {
-    'host': 'database',
+    'host': 'db',
     'user': 'root',
     'password': 'cases123',
     'database': 'case_studies',
@@ -38,4 +38,4 @@ def show_data():
         return f"Error: {str(e)}"
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80)
+    app.run(host="0.0.0.0", port=8000)
